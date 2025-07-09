@@ -15,7 +15,14 @@ export default function Hero() {
           {/* Left Content */}
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-100 to-pink-100 rounded-full text-sm font-medium text-purple-800 mb-6">
-              <Sparkles className="h-4 w-4 mr-2" />
+              <div className="relative mr-2">
+                <Sparkles className="h-4 w-4" />
+                <img
+                  loading="lazy"
+                  className="absolute top-0 left-0 aspect-square object-cover object-top-left w-full min-h-5 min-w-5 overflow-hidden"
+                  alt=""
+                />
+              </div>
               New Collection 2024
             </div>
 
